@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      body {
+        background-color: #d6e2f0; /* Light blue background */
+        font-family: Outfit, sans-serif; /* Use Outfit font if available, fallback to sans-serif */
+        margin: 0; /* Remove default margin */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Ensure the body takes up full viewport height */
+      }
+
+      .qr-container {
+        background-color: white;
+        padding: 16px; /* Add some padding around the content */
+        border-radius: 20px; /* Rounded corners for the container */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+        text-align: center; /* Center the text within the container */
+      }
+
+      img {
+        width: 100%; /* Make image responsive */
+        border-radius: 10px; /* Rounded corners for the image */
+        max-width: 288px; /* Set a maximum width for the image */
+        display: block; /* Prevents a small gap below the image */
+        margin: 0 auto; /* Center the image */
+      }
+
+      .qr-code-text {
+        margin-top: 20px; /* Add some spacing between the image and text */
+      }
+
+      .qr-code-text h3 {
+        font-size: 22px; /* Slightly larger heading */
+        font-weight: 700; /* Bold heading */
+        color: #1e2b49;
+        margin-bottom: 15px; /* Add spacing below the heading */
+      }
+
+      .qr-code-text .lower-text {
+        font-size: 15px;
+        color: #7b899f; /* Lighter text color for the body text */
+        line-height: 1.5; /* Improve readability with line height */
+      }
+
+      @media (min-width: 768px) {
+        /* Styles for larger screens */
+        .qr-container {
+          padding: 24px; /* Increase padding on larger screens */
+        }
+
+        .qr-code-text h3 {
+          font-size: 26px; /* Increase heading size on larger screens */
+        }
+        .qr-code-text .lower-text {
+          font-size: 16px; /* Increase body text size on larger screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-container">
+      <img src="images/image-qr-code.png" />
+      <div class="qr-code-text">
+        <div class="above-text">
+          <h3>Improve your front-end skills by building projects</h3>
+        </div>
+        <div class="lower-text">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
